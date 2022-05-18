@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MailBook</title>
+    <link rel = "stylesheet" href = "main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- form modal -->
+    <div id = "fullscreen-div"></div>
+    <form class = "modal" id = "modal">
+        <div class = "modal-content">
+            <div class = "modal-head">
+                <h3 id = "modal-title">Dodaj kontakt</h3>
+                <button type="button" id = "close-btn">
+                    <i class = "fas fa-times"></i>
+                </button>
+            </div>
+            <div class = "modal-main">
+                <div class = "modal-row">
+                    <div class = "modal-col">                       
+                    </div>
+                </div>
+            
+                <div class = "modal-row grid-row">
+                    <div class = "modal-col">
+                        <label for="">Ime</label>
+                        <input type = "text" placeholder="Unesite ime" class = "form-control" name = "Unesite_ime">
+                    </div>
+                    <div class = "modal-col">
+                        <label for="">Prezime</label>
+                        <input type = "text" placeholder="Unesite prezime" class = "form-control" name = "Unesite_prezime">
+                    </div>
+                </div>
+
+                <div class = "modal-row grid-row">
+                    <div class = "modal-col">
+                        <label for="">Email</label>
+                        <input type = "email" placeholder="Unesite email" class = "form-control" name = "email">
+                    </div>
+                    <div class = "modal-col">
+                        <label for="">Telefon</label>
+                        <input type = "text" placeholder="Telefonski broj" class = "form-control" name = "telefon">
+                    </div>
+                </div>
+
+               
+
+                <div class = "modal-row" id = "modal-btns">
+                    <button type = "submit" id = "save-btn">Save</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- end of form modal -->
+
+    <!-- address book home -->
+    <div class = "addr-book" id = "addr-book">
+        <div class = "addr-book-content">
+            <div class = "addr-book-head">
+                <i class = "fa-solid fa-address-book fa-2x"></i>
+                <h2>Imenik</h2>
+            </div>
+
+            <div class = "addr-book-top">
+                <button type = "button" class = "btn" id = "add-btn">
+                    <span><i class = "fas fa-plus"></i> Dodaj kontakt</span>
+                </button>
+            </div>
+
+            <div class = "addr-book-list" id = "addr-book-list">
+                <table class = "addr-table">
+                    <thead>
+                        <tr>                         
+                            <th>Ime</th>
+                            <th>Prezime</th>
+                            <th>Email</th>
+                            <th>Telefon</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>
+                                <span class = "addressing-name">Smith Family</span><br><span class = "address">Johnson Street - 5668, Lake side</span>
+                            </td>
+                            <td><span>Colleagues</span></td>
+                            <td>Mark Smith</td>
+                            <td>123-456-7890</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- end of address book home -->
+    
+
+
+    <script src = "app.js"></script>
+</body>
+</html>
